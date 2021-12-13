@@ -3,6 +3,8 @@ const Flagship = require("@flagship.io/js-sdk");
 const app = express(); 
 const port = process.env.PORT || 8000;
 
+app.use(cors());
+
 app.get('/api', (req, res) => {
     console.log("Call FS...");
     const vid = req.query.vid;

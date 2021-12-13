@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const Flagship = require("@flagship.io/js-sdk");
 const app = express(); 
 const port = process.env.PORT || 8000;
